@@ -39,11 +39,11 @@ class FileStorage:
     def reload(self):
         """a method to deserializes JSON file to object."""
 
-        if os.path.exists(FileStorage.__file_path):
+        if not os.path.exists(FileStorage.__file_path):
             return
         with open(FileStorage.__file_path, "r", encoding="utf-8") as file:
             dict_obj = json.load(file)
-            dict_obj = {k: self.dict_classe()[va["__class__"]](**va)
+            dict_obj = {k: self.dict_class()[va["__class__"]](**va)
                         for k, va in dict_obj.items()}
             FileStorage.__objects = dict_obj
 
