@@ -37,26 +37,26 @@ class HBNBCommand(cmd.Cmd):
     }
 
 
-def my_check(arg):
+    def my_check(arg):
 
-    """ a method to check arguments """
+        """ a method to check arguments """
 
-    curly = re.search(r"\{(.*?)\}", arg)
-    bckets = re.search(r"\[(.*?)\]", arg)
+        curly = re.search(r"\{(.*?)\}", arg)
+        bckets = re.search(r"\[(.*?)\]", arg)
 
-    if curly is None:
-        if bckets is None:
-            return [idx.strip(",") for idx in split(arg)]
+        if curly is None:
+            if bckets is None:
+                return [idx.strip(",") for idx in split(arg)]
+            else:
+                lex = split(arg[:bckets.span()[0]])
+                rel = [idx.strip(",") for indx in lex]
+                rel.append(bckets.group())
+                return rel
         else:
-            lex = split(arg[:bckets.span()[0]])
-            rel = [idx.strip(",") for indx in lex]
-            rel.append(bckets.group())
+            lex = split(arg[:curly.span()[0]])
+            rel = [idx.strip(",") for idx in lex]
+            rel.append(curly.group())
             return rel
-    else:
-        lex = split(arg[:curly.span()[0]])
-        rel = [idx.strip(",") for idx in lex]
-        rel.append(curly.group())
-        return rel
 
     def emptyline(self):
         """Do nothing if the line is empty line."""
