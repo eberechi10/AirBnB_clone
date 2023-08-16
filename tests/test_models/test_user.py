@@ -30,6 +30,6 @@ class TestUser(unittest.TestCase):
 
         idx = User()
         self.assertIs(type(idx.first_name), str)
-        self.assertIs(type(id.last_name), str)
+        self.assertIs(type(idx.last_name), str)
         self.assertTrue(idx.first_name == "")
         self.assertTrue(idx.last_name == "")
