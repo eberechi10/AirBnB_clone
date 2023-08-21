@@ -1,0 +1,51 @@
+/* Add styles for the places section */
+.places {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 1200px;
+}
+
+.place {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.place h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.place-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.place-info .price_by_night {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Adjustments for mobile screens */
+@media screen and (max-width: 1000px) {
+  .place {
+    padding: 0.5rem;
+  }
+
+  .place-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .place-info .price_by_night {
+    font-size: 1.2rem;
+  }
+}
+

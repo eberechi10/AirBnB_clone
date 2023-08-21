@@ -1,0 +1,22 @@
+/* Places Styles - styles/7-places.css */
+.places articles {
+  width: 390px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #FF5A5F;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.place h1 {
+  font-size: 30px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.place h2 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+

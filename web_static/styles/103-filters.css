@@ -1,0 +1,35 @@
+/* Style the filters section */
+.filters {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Style the locations and amenities sections */
+.locations, .amenities {
+  margin-bottom: 20px;
+}
+
+/* Style headings for better hierarchy */
+.locations h2, .amenities h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Style the popover with accessible hidden state */
+.popover {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1;
+}
+
+/* Improve accessibility for popover */
+.popover[aria-hidden="false"] {
+  display: block;
+}
+

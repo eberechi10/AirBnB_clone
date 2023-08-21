@@ -1,0 +1,19 @@
+/* Style the footer */
+footer {
+  background-color: #f9f9f9;
+  color: #666;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+/* Improve color contrast for accessibility */
+footer a {
+  color: #007bff;
+}
+
+/* Add spacing for better layout */
+footer p {
+  margin: 10px 0;
+}
+

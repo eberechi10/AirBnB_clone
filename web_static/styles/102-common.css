@@ -1,0 +1,24 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a base font size and line height */
+body {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Add common styles for text and links */
+p, ul {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Add any additional common styles here */
+

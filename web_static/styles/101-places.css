@@ -1,0 +1,124 @@
+/* Reset some default styles to ensure consistency */
+body, h1, h2, h3, h4, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a base font and background color */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Header styling */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Container for filters and places */
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Filters section */
+.filters {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px;
+}
+
+.locations, .amenities {
+  margin-bottom: 20px;
+}
+
+.locations h3, .amenities h3 {
+  margin-bottom: 5px;
+}
+
+.popover {
+  display: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.locations:hover .popover, .amenities:hover .popover {
+  display: block;
+}
+
+.search {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Places section */
+.places {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px;
+}
+
+.place {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 20px);
+}
+
+.place h2 {
+  margin-bottom: 10px;
+}
+
+.place-info {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.price_by_night {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.information {
+  flex: 1;
+}
+
+.user {
+  margin-top: 10px;
+}
+
+.description, .amenities, .reviews {
+  margin-top: 20px;
+}
+
+.reviews ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.reviews li {
+  margin-bottom: 10px;
+}
+
+.reviews h3 {
+  margin-bottom: 5px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+

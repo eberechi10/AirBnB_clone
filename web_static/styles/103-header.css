@@ -1,0 +1,32 @@
+/* Style the header */
+header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+/* Improve heading hierarchy */
+header h1 {
+  margin: 0;
+}
+
+/* Improve color contrast for accessibility */
+header a {
+  color: #fff;
+}
+
+/* Add spacing for better layout */
+header p {
+  margin-top: 10px;
+}
+
+/* Add a bottom border to the header */
+header {
+  border-bottom: 1px solid #0056b3;
+}
+

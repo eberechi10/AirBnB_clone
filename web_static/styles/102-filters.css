@@ -1,0 +1,30 @@
+/* Add styles for the filters section */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+
+.locations, .amenities {
+  flex-basis: 45%;
+}
+
+.popover {
+  display: none;
+  /* Add popover styles */
+}
+
+/* Adjustments for mobile screens */
+@media screen and (max-width: 1000px) {
+  .filters {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popover {
+    /* Adjust popover styles for mobile */
+  }
+}
+
